@@ -131,6 +131,7 @@ export default class ProgressBar extends Component {
       style,
       unfilledColor,
       width,
+      backgroundColorOfParentElement,
       ...restProps
     } = this.props;
 
@@ -172,7 +173,7 @@ export default class ProgressBar extends Component {
        left: -borderRadius,
        borderRadius: height / 2 + borderRadius / 2,
        borderWidth: borderRadius,
-       borderColor: 'white'
+       borderColor: backgroundColorOfParentElement
     };
 
     return (
